@@ -1,0 +1,62 @@
+﻿<Page
+    x:Class="FinalProject_AltaherAl_Dulaimi.Page1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FinalProject_AltaherAl_Dulaimi"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid HorizontalAlignment="Left" Width="1500">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFD8ED6D" Offset="0.015"/>
+                <GradientStop Color="#FFCA9999" Offset="1"/>
+                <GradientStop Color="#FFA14D34" Offset="0.907"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Image HorizontalAlignment="Left" Height="142" Margin="721,40,0,0" VerticalAlignment="Top" Width="164" Source="/Assets/PizzaImgSize.png" FocusVisualPrimaryBrush="#FFEAE2E2"/>
+        <Image HorizontalAlignment="Left" Height="101" Margin="721,219,0,0" VerticalAlignment="Top" Width="184" Source="/Assets/PizzaImgSize.png" FocusVisualPrimaryBrush="#FFEAE2E2"/>
+        <Image Height="79" Margin="711,369,689,0" VerticalAlignment="Top" Source="/Assets/PizzaImgSize.png" FocusVisualPrimaryBrush="#FFEAE2E2"/>
+
+
+        <TextBlock HorizontalAlignment="Left" Margin="750,187,0,0" Text="14 Inch" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="743,325,0,0" Text="12 Inch" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="732,453,0,0" Text="8 Inch" TextWrapping="Wrap" VerticalAlignment="Top" />
+
+
+        <TextBlock HorizontalAlignment="Left" Margin="118,111,0,0" Text="Guest Name: " TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtbGuestName" HorizontalAlignment="Left" Margin="217,103,0,0" PlaceholderText="e.g Guest" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="182"/>
+        <TextBlock HorizontalAlignment="Left" Margin="118,204,0,0" Text="Toppings: " TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="118,251,0,0" Text="Size: " TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboBox1" Margin="217,245,0,0" Width="120"  >
+            <x:String>14 Inch</x:String>
+            <x:String>12 Inch</x:String>
+            <x:String>8 Inch</x:String>
+        </ComboBox>
+
+        <CheckBox x:Name="chkboxExtraChesse" Content="Extra Chesse" Margin="217,202,0,0" VerticalAlignment="Top" Checked="chkExtraChesse" Unchecked="chkExtraChesse_Unchecked"/>
+        <CheckBox x:Name="chkboxPepperoni" Content="Pepperoni" Margin="342,202,0,0" VerticalAlignment="Top" Checked="chkPepperoni" Unchecked="chkPepperoni_Unchecked"/>
+        <CheckBox x:Name="chkboxGreenPeppers" Content="Green Peppers" Margin="462,202,0,0" VerticalAlignment="Top" Checked="chkGreenPeppers" Unchecked="chkGreenPeppers_Unchecked"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="120,305,0,0" Text="Pick Up Time: " TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtbPickTime" HorizontalAlignment="Left" Margin="217,299,0,0" PlaceholderText="e.g 6 P.M" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="182"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="128,369,0,0" Text="Special Edition: " TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chkboxGulabJamuns" Content="Gulab Jamuns" Margin="277,363,0,0" VerticalAlignment="Top" Checked="chkGulabJamuns" Unchecked="chkGulabJamuns_unchecked"/>
+
+        <TextBlock x:Name="lblHi" HorizontalAlignment="Left" Margin="52,10,0,0" Text="Hi! " TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" FontFamily="Andalus" Height="62" Width="379" Foreground="Black"/>
+
+
+        <TextBlock HorizontalAlignment="Left" Margin="128,409,0,0" Text="Sauce: " TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <CheckBox x:Name="SpicyRedSauce" Content="Spicy Red Sauce" Margin="188,404,0,0" VerticalAlignment="Top" Checked="chkSpicyRedSauce" Unchecked="chkSpicyRedSauce_unchecked"/>
+        <CheckBox x:Name="SweetPizzaSauce" Content="Sweet Pizza Sauce" Margin="342,404,0,0" VerticalAlignment="Top" Checked="chkSweetPizzaSauce" Unchecked="chkSweetPizzaSauce_unchecked"/>
+
+        <Button x:Name="btnPlaceOrder" Content="Place an order" Margin="247,474,0,0" VerticalAlignment="Top" Height="42" Width="122" Click="btnPlaceOrder_Click"/>
+
+        <TextBlock x:Name="lblPrice" HorizontalAlignment="Left" Margin="252,539,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Aqua"/>
+    </Grid>
+
+
+</Page>

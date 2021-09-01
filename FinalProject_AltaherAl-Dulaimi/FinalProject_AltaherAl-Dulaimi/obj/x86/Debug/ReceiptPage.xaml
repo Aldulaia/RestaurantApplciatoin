@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="FinalProject_AltaherAl_Dulaimi.Page4"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FinalProject_AltaherAl_Dulaimi"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFEDB5B5"/>
+                <GradientStop Color="#FFD45656" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Rectangle   Stroke="Red"  StrokeThickness="6" Margin="108,65,287,231"/>
+        <TextBlock x:ConnectionId='2' x:Name="lblReceipt" HorizontalAlignment="Left" Margin="150,105,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" Height="372" Width="325"/>
+
+    </Grid>
+</Page>
+

@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="FinalProject_AltaherAl_Dulaimi.Page7"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FinalProject_AltaherAl_Dulaimi"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFDD2525"/>
+                <GradientStop Color="#FFC69C9C" Offset="1"/>
+                <GradientStop Color="#FFCFFFCB" Offset="0.898"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Grid Height="340" Width="700">
+
+
+            <Rectangle Width="630"   Stroke="LightBlue" Fill="#FFCBFFB3" StrokeThickness="6" Margin="35,10,35,14" Height="260"></Rectangle>
+            <SymbolIcon Symbol="Contact" Margin="-277,-111,277,111" Foreground="Blue"/>
+            <SymbolIcon Symbol="Home" Margin="-277,-41,277,41" Foreground="Blue"/> 
+            <TextBlock HorizontalAlignment="Left" Margin="96,49,0,0" FontWeight="Bold" Text="Attention:" TextWrapping="Wrap" VerticalAlignment="Top" FocusVisualPrimaryBrush="#FFB71212" Foreground="#FFD81414"/>
+            <TextBlock HorizontalAlignment="Left" Margin="96,120,0,0" Text="In Person Location: " FontWeight="Bold" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black"/>
+            <TextBlock HorizontalAlignment="Left" Margin="233,48,0,0" Text="Due to COVID-19. Our restaurant is reach through Online Orders Only" TextWrapping="Wrap" VerticalAlignment="Top" Width="398" Foreground="Black"/>
+            <TextBlock HorizontalAlignment="Left" Margin="233,120,0,0" Text="Binghamton, NY 13905 / Papap Dario Pizza Store" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF0E0808"/>
+            <!-- Here's a valid comment. Notice it's outside the <UserControl> tag's braces -->
+            <TextBlock HorizontalAlignment="Left" Margin="96,178,0,0" FontWeight="Bold" Text="Mobile phone: " TextWrapping="Wrap" VerticalAlignment="Top" FocusVisualPrimaryBrush="#FFB71212" Foreground="#FFD81414"/>
+            <TextBlock HorizontalAlignment="Left" Margin="233,178,0,0" Text="(647)-723-8129 " TextWrapping="Wrap" VerticalAlignment="Top" FontStyle="Normal" Foreground="Black"/>
+            <TextBlock HorizontalAlignment="Left" Margin="96,219,0,0" FontWeight="Bold" Text="E-mail: " TextWrapping="Wrap" VerticalAlignment="Top" FocusVisualPrimaryBrush="#FFB71212" Foreground="Black"/>
+            <TextBlock HorizontalAlignment="Left" Margin="233,219,0,0" Text="info@PapaDarioPizzaStore.ca " TextWrapping="Wrap" VerticalAlignment="Top" FontStyle="Normal" Foreground="Black"/>
+            <SymbolIcon Symbol="Phone" Margin="-277,16,277,-16" Foreground="Blue"/>
+            <SymbolIcon Symbol="Mail" Margin="-277,59,277,-59" Foreground="Blue"/> 
+
+
+        </Grid>
+
+    </Grid>
+</Page>
